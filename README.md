@@ -43,3 +43,33 @@ This application requires **FFmpeg** to perform the video magic.
 | **File Size** | Standard | 📉 30-50% Smaller |
 | **Compatibility** | 🌎 Plays Everywhere | 📺 Modern Devices |
 | **Best For...** | Quick sharing | Archiving |
+
+---
+
+---
+
+## ❓ Troubleshooting & FAQ
+
+> **Tip:** If the app fails, always check the `conversion_log.txt` file created in the app folder for specific error messages.
+
+#### 🛠️ The "Start" button doesn't do anything
+* **Reason:** The app cannot find the "engines" required to process video.
+* **Solution:** Ensure `ffmpeg.exe` and `ffprobe.exe` are in the same folder as the `.exe`. You can download them from [ffmpeg.org](https://ffmpeg.org/download.html).
+
+#### ❌ GPU Error or "Failed" status in the log
+* **Reason:** Your graphics drivers are outdated, or your GPU doesn't support the selected codec (e.g., older cards may not support H.265).
+* **Solution:** Update your GPU drivers or change the **Hardware Accel** setting to **"None (CPU)"**.
+
+#### ⏳ The progress bar is stuck at 0%
+* **Reason:** For large batches, the app spends the first few moments scanning every file to calculate the total duration. 
+* **Solution:** Wait a few seconds; the bar will start moving once the actual encoding begins. Check the "Status" text for live updates.
+
+#### 🛡️ Windows Defender flagged the .exe as a "Virus"
+* **Reason:** This is a common "False Positive" for software created with Python (PyInstaller) that isn't digitally signed.
+* **Solution:** Since this is open-source, you can verify the code yourself. To run it, click **"More Info"** → **"Run Anyway"**.
+
+#### 📂 Files are joined in the wrong order
+* **Reason:** The app sorts by **File Creation Date**. If you copied files recently, the dates might be identical.
+* **Solution:** Ensure your source files are named sequentially (e.g., `01.ts`, `02.ts`). The app will default to alphabetical sorting if dates are tied.
+
+---
