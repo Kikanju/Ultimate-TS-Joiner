@@ -29,12 +29,7 @@ This application requires **FFmpeg** to perform the video magic.
 3. **Important:** Place both `.exe` files in the same folder as this application.
 
 ### 2. Running the App
-- **For Users:** Download the latest `Ultimate_TS_Joiner.exe` from the [Releases](https://github.com/YOUR_USERNAME/YOUR_REPO/releases) page.
+- **For Users:** Download the latest `Ultimate_TS_Joiner.exe` from the [Releases](https://github.com/Kikanju/Ultimate-TS-Joiner/releases) page.
 - **For Developers:** ```bash
-  git clone [https://github.com/YOUR_USERNAME/YOUR_REPO.git](https://github.com/YOUR_USERNAME/YOUR_REPO.git)
-  python ultimate_joiner.py
-
-  Feature,H.264 (Default),H.265 (HEVC)
-Speed,🚀 Very Fast,🐢 Slower
-File Size,Standard,📉 30-50% Smaller
-Compatibility,Plays Everywhere,Best for PC/Modern TVs
+  git clone [https://github.com/YOUR_USERNAME/YOUR_REPO.git](https://github.com/Kikanju/Ultimate-TS-Joiner.git)
+  python ultimate_joiner.py  
