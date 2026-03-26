@@ -36,3 +36,10 @@ This application requires **FFmpeg** to perform the video magic.
 - **For Developers:** ```bash
   git clone [https://github.com/Kikanju/Ultimate-TS-Joiner.git](https://github.com/Kikanju/Ultimate-TS-Joiner.git)
   python ultimate_joiner.py  
+
+| Feature | H.264 (Default) | H.265 (HEVC) |
+| :--- | :--- | :--- |
+| **Speed** | 🚀 Ultra Fast | 🐢 Slower |
+| **File Size** | Standard | 📉 30-50% Smaller |
+| **Compatibility** | 🌎 Plays Everywhere | 📺 Modern Devices |
+| **Best For...** | Quick sharing | Archiving |
