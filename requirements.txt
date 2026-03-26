@@ -1,0 +1,2 @@
+# No external pypi dependencies required for the base script.
+# Standard Python 3.x installation includes tkinter, os, subprocess, and threading.

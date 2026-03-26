@@ -1,0 +1,7 @@
+__pycache__/
+build/
+dist/
+*.spec
+*.log
+join_list.txt
+ffmpeg_list.txt
