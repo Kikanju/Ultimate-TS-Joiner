@@ -7,6 +7,9 @@
 A powerful, automated GUI tool to join fragmented `.ts` video segments into high-quality `.mp4` files. Designed for speed, ease of use, and massive batch processing.
 
 ---
+![App Screenshot](screenshot.png)
+
+---
 
 ## ✨ Key Features
 
