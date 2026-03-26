@@ -31,5 +31,5 @@ This application requires **FFmpeg** to perform the video magic.
 ### 2. Running the App
 - **For Users:** Download the latest `Ultimate_TS_Joiner.exe` from the [Releases](https://github.com/Kikanju/Ultimate-TS-Joiner/releases) page.
 - **For Developers:** ```bash
-  git clone [https://github.com/YOUR_USERNAME/YOUR_REPO.git](https://github.com/Kikanju/Ultimate-TS-Joiner.git)
+  git clone [https://github.com/Kikanju/Ultimate-TS-Joiner.git](https://github.com/Kikanju/Ultimate-TS-Joiner.git)
   python ultimate_joiner.py  
