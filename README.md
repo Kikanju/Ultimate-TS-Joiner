@@ -13,13 +13,25 @@ A powerful, automated GUI tool to join fragmented `.ts` video segments into high
 
 ## ✨ Key Features
 
+- [cite_start]🖱️ **Drag & Drop Support:** Simply highlight folders in Windows Explorer and drop them directly into the app queue.
 - 🤖 **Smart Auto-Split:** Automatically detects time gaps (e.g., 15 mins) between files to split one folder into multiple logical video parts.
 - ⚡ **Hardware Acceleration:** Full support for **NVIDIA (NVENC)**, **AMD (AMF)**, and **Intel (QuickSync)** GPUs.
-- 📦 **Batch Queue:** Drag in dozens of folders and let the app process them all unattended.
+- 📦 **Batch Queue:** Process dozens of folders unattended with live status updates.
 - 🎞️ **Dual Codec Support:** Toggle between **H.264** (Maximum Speed) and **H.265** (Maximum Compression).
-- 📝 **Flexible Naming:** Choose to name output files based on the **First TS File** in the sequence or the **Parent Folder Name**.
+- 📝 **Flexible Naming:** Choose to name output files based on the **First TS File** or the **Parent Folder Name**.
 - 🛠️ **Dry Run Mode:** Instantly calculate total size and estimate output space before starting.
 - 🌙 **Auto-Shutdown:** Option to shut down your PC automatically once the entire queue is finished.
+
+---
+
+## 🎞️ Which Codec Should I Use?
+
+| Feature | H.264 (Default) | H.265 (HEVC) |
+| :--- | :--- | :--- |
+| **Speed** | 🚀 Ultra Fast | 🐢 Slower |
+| **File Size** | Standard | 📉 30-50% Smaller |
+| **Compatibility** | 🌎 Plays Everywhere | 📺 Modern Devices |
+| **Best For...** | Quick sharing | Archiving |
 
 ---
 
@@ -33,43 +45,8 @@ This application requires **FFmpeg** to perform the video magic.
 
 ### 2. Running the App
 - **For Users:** Download the latest `Ultimate_TS_Joiner.exe` from the [Releases](https://github.com/Kikanju/Ultimate-TS-Joiner/releases) page.
-- **For Developers:** ```bash
+- **For Developers:**
+  ```bash
   git clone [https://github.com/Kikanju/Ultimate-TS-Joiner.git](https://github.com/Kikanju/Ultimate-TS-Joiner.git)
-  python ultimate_joiner.py  
-
-| Feature | H.264 (Default) | H.265 (HEVC) |
-| :--- | :--- | :--- |
-| **Speed** | 🚀 Ultra Fast | 🐢 Slower |
-| **File Size** | Standard | 📉 30-50% Smaller |
-| **Compatibility** | 🌎 Plays Everywhere | 📺 Modern Devices |
-| **Best For...** | Quick sharing | Archiving |
-
----
-
----
-
-## ❓ Troubleshooting & FAQ
-
-> **Tip:** If the app fails, always check the `conversion_log.txt` file created in the app folder for specific error messages.
-
-#### 🛠️ The "Start" button doesn't do anything
-* **Reason:** The app cannot find the "engines" required to process video.
-* **Solution:** Ensure `ffmpeg.exe` and `ffprobe.exe` are in the same folder as the `.exe`. You can download them from [ffmpeg.org](https://ffmpeg.org/download.html).
-
-#### ❌ GPU Error or "Failed" status in the log
-* **Reason:** Your graphics drivers are outdated, or your GPU doesn't support the selected codec (e.g., older cards may not support H.265).
-* **Solution:** Update your GPU drivers or change the **Hardware Accel** setting to **"None (CPU)"**.
-
-#### ⏳ The progress bar is stuck at 0%
-* **Reason:** For large batches, the app spends the first few moments scanning every file to calculate the total duration. 
-* **Solution:** Wait a few seconds; the bar will start moving once the actual encoding begins. Check the "Status" text for live updates.
-
-#### 🛡️ Windows Defender flagged the .exe as a "Virus"
-* **Reason:** This is a common "False Positive" for software created with Python (PyInstaller) that isn't digitally signed.
-* **Solution:** Since this is open-source, you can verify the code yourself. To run it, click **"More Info"** → **"Run Anyway"**.
-
-#### 📂 Files are joined in the wrong order
-* **Reason:** The app sorts by **File Creation Date**. If you copied files recently, the dates might be identical.
-* **Solution:** Ensure your source files are named sequentially (e.g., `01.ts`, `02.ts`). The app will default to alphabetical sorting if dates are tied.
-
----
+  pip install tkinterdnd2
+  python ultimate_joiner.py
