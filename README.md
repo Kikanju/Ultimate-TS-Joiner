@@ -1,4 +1,4 @@
-# 🎬 Ultimate Batch TS Joiner (v1.1.0)
+# 🎬 Ultimate Batch TS Joiner (v1.1.1)
 
 ![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
